@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+.container2 p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+
+}
+.container2 p span.typed-text {
+  font-weight:bolder ;
+  color: #FFA07A;
+}
+.container2 p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container2 p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  50% { background-color: transparent; }
+  100% { background-color: transparent; }
+}
