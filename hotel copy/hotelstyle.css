@@ -81,7 +81,7 @@ margin: 10px 0px;
 }
 
 .btn-dark:hover{
-    background-color: #FFA07A;
+    background-color: #CC6600;
     color: #333; 
 }
 
@@ -183,7 +183,6 @@ margin: 10px 0px;
     background: url(./img/SHOWCASE\ PHOTO.jpg) no-repeat
     center center/cover;
     height: 400px;
-    
 
 }
 
@@ -218,7 +217,7 @@ margin: 10px 0px;
     background-color: #CC6600;
     width: 50%;
     height: 100%;
-    color: #fff;
+    color: #222;
     padding: 50px 30px;
     overflow: hidden;
 }
@@ -255,14 +254,14 @@ margin: 10px 0px;
 /*About*/
 
 #about{
-    background-color: #FFA07A;
+    background-color: #CC6600;
 }
+
 #about .about-text{
     padding: 30px 0px;
     text-align: left;
     width: 50%;
     min-height: 100%;
-    
 }
 
 #about .about-text p{ 
@@ -346,7 +345,8 @@ margin: 10px 0px;
 #contact input, textarea{
     width: 100%;
     padding: 10px;
-    border: 1px black solid;
+    border: 1px black solid ;
+    border-radius: 10%;
     background-color: #FFFBD0;
 }
 
@@ -445,12 +445,12 @@ margin: 10px 0px;
 .room-info{
     text-align: center;
     padding-top: 25px;
-    background-color: #f4f4f4;
+    background-color: #FFFBD0;
 }
 
 
 #room-types{
-    background-color: rgb(210, 188, 115)
+    background-color: #CC6600
 }
 
 
