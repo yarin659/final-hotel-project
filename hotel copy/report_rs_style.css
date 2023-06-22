@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #FFFBD0;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .section {
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .section h2 {
+    margin-top: 0;
+  }
+
+  .room-list {
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .room-list li {
+    margin-bottom: 10px;
+  }
+
+
+  
