@@ -332,39 +332,36 @@ margin: 10px 0px;
 
 /*Contact Form*/
 
-#contact{
+#contact {
     background-color: #FFFBD0;
 }
 
-#contact .form-group{
+#contact .form-group {
     margin-bottom: 15px;
-    
 }
 
-
-#contact input, textarea{
+#contact input,
+#contact textarea {
     width: 100%;
     padding: 10px;
-    border: 1px black solid ;
+    border: 1px black solid;
     border-radius: 10%;
     background-color: #FFFBD0;
 }
 
-/* The container must be positioned relative: */
 .custom-select {
     position: relative;
-  }
-  
-  .custom-select select {
-    display: none; /*hide original SELECT element: */
-  }
-  
-  .select-selected {
+}
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
     background-color: #f6f2bd;
-  }
-  
-  /* Style the arrow inside the select element: */
-  .select-selected:after {
+}
+
+.select-selected:after {
     position: absolute;
     content: "";
     top: 14px;
@@ -373,73 +370,63 @@ margin: 10px 0px;
     height: 0;
     border: 6px solid transparent;
     border-color: rgb(0, 0, 0) transparent transparent transparent;
-  }
-  
-  /* Point the arrow upwards when the select box is open (active): */
-  .select-selected.select-arrow-active:after {
+}
+
+.select-selected.select-arrow-active:after {
     border-color: transparent transparent rgb(0, 0, 0) transparent;
     top: 7px;
-  }
-  
-  /* style the items (options), including the selected item: */
-  .select-items div,.select-selected {
+}
+
+.select-items div,
+.select-selected {
     color: #000000;
-    padding: 2px ;
+    padding: 2px;
     border: 2px solid transparent;
     border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent;
     cursor: pointer;
-  }
-  
-  /* Style items (options): */
-  .select-items {
+}
+
+.select-items {
     position: absolute;
     background-color: #f6f2bd;
     top: 100%;
     left: 0;
     right: 0;
     z-index: 99;
-  }
-  
-  /* Hide the items when the select box is closed: */
-  .select-hide {
-    display: none;
-  }
-  
-  .select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-
-/* #room_type{
-    width: 200px;
-    margin: 10px 5px;
-    border: 1px solid transparent;
-    border-color: #000000;
-    background-color:#FFFBD0;
-    height: 50px;  
-    font-size: 15px;
 }
-.select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
-  }
 
-.room_text{
+.select-hide {
+    display: none;
+}
 
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
 
-} */
-
-
-
-
-#contact textarea{
+#contact textarea {
     height: 200px;
 }
+
 #contact input:focus,
-#contact textarea:focus{
+#contact textarea:focus {
     outline: none;
     border-color: #FF9900;
-
 }
+
+/* Additional styles for both sections */
+#contact .container {
+    max-width: 600px; /* Set the maximum width to make the form centered */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add some padding around the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow for a subtle effect */
+}
+
+#contact .form-group {
+    max-width: 400px; /* Limit the width of the form elements */
+    margin: 0 auto 15px; /* Center the form elements and add some bottom margin */
+}
+
 
 /* Rooms */
 .room-info{
