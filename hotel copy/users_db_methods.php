@@ -17,6 +17,8 @@ function getAllUsers($db)
     {
         $users += $row['username'];
     }
+
+    return $users;
 }
 
 
