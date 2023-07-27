@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hotelstyle.css">
+    <link rel="stylesheet" media="screen and(max-width: 768px" href="mobile_hotel.css">
+
+    <script src="https://kit.fontawesome.com/fbb2dc004c.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+
+    <style>
+
+        p{
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .order {
+          margin-bottom: 20px;
+        }
+        
+        .order-label {
+          font-weight: bold;
+        }
+      </style>
+</head>
+<body>
+
+    <nav id="navbar">
+             <h1 class="Logo"><a href="home.html"></a>HBT </h1>
+             <ul>
+                <li> <a href="home.html">Home</a> </li>
+                <li> <a href="About.html">About</a> </li>
+                <li> <a  class="current" href="Contact.html">Contact</a> </li>
+                <li> <a href="room.html">Rooms</a> </li>
+             </ul>
+    </nav>
+
+
+    <section id="contact" class="py3">
+        <div class="containor"> 
+            <h1><span class="lead-text">Your</span> Reservation</h1>
+            <p>here are your future reservation:</p>
+
+            <div class="order">
+                <span class="order-label">Name:</span>
+                <span id="name">John Doe</span>
+              </div>
+              
+              <div class="order">
+                <span class="order-label">Room Number:</span>
+                <span id="room-number">101</span>
+              </div>
+              
+              <div class="order">
+                <span class="order-label">Room Type:</span>
+                <span id="room-type">Single Room</span>
+              </div>
+              
+              <div class="order">
+                <span class="order-label">People Amount:</span>
+                <span id="people-amount">1</span>
+              </div>
+              
+              <div class="order">
+                <span class="order-label">Dates:</span>
+                <span id="dates">June 15 - June 20</span>
+              </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="contact" class="py3">
+        <div class="container"> 
+            <h1><span class="lead-text">Make a</span> Reservation</h1>
+            <p>Fill out the form below to make a new reservation</p>
+            <form action="submit_reservation.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email">
+                </div>
+    
+                <div class="form-group">
+                    <div class="custom-select" style="width:150px;"> 
+                        <label for="room">Room type</label><br>
+                        <select name="room_type" id="room_type">
+                            <option value="family_room">Family Room</option>
+                            <option value="basic_room">Basic Room</option>
+                            <option value="suite_room">Suite Room</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="date">Date</label><br>
+                        <input type="date" id="date" name="start_date">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="to_date">To Date</label><br>
+                        <input type="date" id="to_date" name="end_date">
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Notes For your reservation</label><br>
+                    <textarea name="reservation_notes" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn-dark">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+
+
+
+
+    <section id="features">
+        <div class="box bg-dark">
+            <i class="fa-solid fa-hotel fa-2x"></i>
+            <h3>Location</h3>
+            <p>Jerusalem</p>
+        </div>
+        <div class="box bg-dark">
+            <i class="fa-solid fa-phone fa-2x"></i>
+            <h3>Phone </h3>
+            <p>050-2106216</p>
+            
+
+        </div>
+        <div class="box bg-dark">
+            <i class="fa-solid fa-envelope fa-2x"></i>
+            <h3>Mail</h3>
+            <p>yarin659@gmail.com</p>
+        </div>
+
+        <div class="box bg-dark">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <h3>Instagram</h3>
+            <p>Hotel_yarin</p>
+        </div>
+    </section>
+
+
+    <script src="room_select.js"></script>
+
+    <footer id="main-footer">
+        <p> HBT &copy; 2022 All Rights Reserved To Yarin Cohen</p>
+        
+    </footer>
+    
+</body>
+</html>
