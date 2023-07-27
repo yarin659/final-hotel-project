@@ -12,6 +12,12 @@ function createTable($db)
     reserved_date DATE,
     user_message TEXT
     )");
+
+    //Create the users table
+    $db->exec("CREATE TABLE IF NOT EXISTS users (
+    username TEXT NOT NULL,
+    password TEXT
+    )");
 }
 
 function isFull($db, $room, $date)
