@@ -1,5 +1,5 @@
 <?php
-include 'users_db_methods';
+include 'userds_db_methods';
 
 //code section:
 
@@ -10,5 +10,17 @@ $db = new SQLite3('sqlite.db');
 $username = $_POST['name'];
 $password = $_POST['password'];
 
-signup($db, $username, $password);
+try
+{
+   signup($db, $username, $password);
+}
+catch (Exception $e)
+{
+    echo $e->getMessage(), "\n";
+}
+finally
+{
+    // Close the database connection
+    $db->close();
+}
 ?>
