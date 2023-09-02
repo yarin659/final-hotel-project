@@ -98,6 +98,6 @@ $db->close();
 sleep(5);
 
 echo "<br>In couple of seconds you will be back to the website.";
-header('Refresh: 10; URL=http://localhost:4430/hotelCopy/Contact.html');
+header('Refresh: 10; URL=http://127.0.0.1/hotel/home.html');
 exit;
 ?>
